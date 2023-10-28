@@ -1,4 +1,4 @@
-import { Column, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 
@@ -34,4 +34,3 @@ u: unspecified
 gender: string;
 }
 
-user/entity/User.entity.ts

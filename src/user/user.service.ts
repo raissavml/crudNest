@@ -19,7 +19,7 @@ export class UserService {
     user.occupancy = createUserDto.occupancy;
     user.email = createUserDto.email;
     user.password = createUserDto.password;
-    user.id = id;
+    user.gender = createUserDto.gender;
     return this.userRepository.save(user);
   }
 
@@ -43,7 +43,7 @@ export class UserService {
     return this.userRepository.save(user);
   }
 
-  removeUser(id: number): Promise<{ affected?: number } {
+  removeUser(id: number): Promise<{ affected?: number }> {
     return this.userRepository.delete(id);
   }
 }
